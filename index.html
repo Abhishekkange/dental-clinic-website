@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script type="module">
+    
+  
+   
+  </script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Pacifico&family=Poppins:wght@300;500&family=Questrial&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Dr. Ashish Hedgire</title>
+    <style>
+
+        .socialLinks{
+
+            display: flex;
+            width: fit-content;
+        }
+        .socialLogos{
+
+            width: 30px;
+            margin: 10px;
+        }
+        .phoneNum{
+
+            display: flex;
+        }
+
+        .googlemap{
+
+            margin: 20px;
+        }
+
+        .clinic{
+
+            display: flex;
+        }
+
+        .clinicSection h2{
+
+            margin-left: 30px;
+            font-size: 30px;
+            font-weight: 300px;
+        }
+
+        .clinic img{
+
+            margin: 15px;
+        }
+
+        .createrCompany{
+
+            background-color: rgb(36, 34, 62);
+            margin: 0px;
+            height: 50px;
+            
+        
+        }
+
+        .createrCompany h3{
+
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            text-align: center;
+            margin: 0px;
+            padding: 10px;
+
+        }
+
+        .footer{
+
+
+            background-color: #131039;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .leftfooter{
+
+            width: 300px;
+            margin: 20px auto 0px auto;
+        }
+
+        .footer .leftfooter h2{
+            color:white;
+
+        }
+        .footer .leftfooter p{
+
+            color: white;
+        }
+        .rightfooter h2{
+
+            color: white;
+        }
+        .rightfooter p{
+
+            color: white;
+        }
+
+        .footer .rightfooter{
+
+            width: 600px;
+            padding: 10px;
+            justify-content: center;
+           
+
+            
+        }
+        
+
+        .rightfooter li{
+
+            list-style: none;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.1rem;
+        }
+        .rightfooter li a{
+
+            color: white;
+            text-align: center;
+        }
+        section3{
+
+            display: flex;
+            justify-content: center;
+        }
+        .aboutsection{
+
+            
+            
+
+            
+        }
+
+        .abouth2{
+
+            font-weight: bold; font-size: 30px; text-align: center; margin-left: 30px;
+        }
+
+        .reviewHeading{
+
+            text-align: center; font-size: 40px;
+        }
+
+        .bookAppointmentBtn{
+
+            background-color: #4BB295;
+            color: white;
+            padding: 10px 30px 10px 30px;
+            border: 0px;
+            width: 300px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+
+        }
+        #imgexcep{
+
+        width: 80px;
+        }
+
+
+
+        .container{
+
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns:1fr 1fr 1fr;
+            margin: 0px auto 0px auto;
+            padding: 20px;
+            width: 800px;
+            justify-content: center;
+        }
+
+
+
+        .box:hover{
+
+            
+
+        }
+      
+        .box{
+
+           
+            height: 250px;
+            width: 250px;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 10px;
+            box-shadow: 0px 3px 5px rgba(0,0,0,.3);
+            border-radius: 15px;
+
+        }
+
+
+        .box img{
+
+            width: 100px;
+            margin: 5px;
+            
+        }
+        .box p{
+
+            margin: 15px;
+            font-size: 14px;
+            
+        }
+
+        .box h2{
+
+            
+            color: #131039;
+            font-size: 17px;
+            font-weight: bold;
+
+        }
+
+        #treatment-txt{
+
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .section2{
+
+            display: flex;
+            justify-content: center;
+        }
+       .box .box-image{
+
+            height: 100px;
+            width: 100px;
+        }
+
+
+        /* RESPONSIVE CODE */
+
+        @media(max-width:918px){
+
+
+            .box{
+
+                height: 210px;
+                width: 210px;
+            }
+
+            .box h2{
+
+                font-size: 14px;
+            }
+
+            .box p{
+
+                font-size: 12px;
+            }
+
+
+        }
+
+
+        @media(max-width:742px){
+
+
+            .container{
+
+            display:grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns:1fr 1fr ;
+            justify-content: center;
+            margin: 0px auto 0px auto;
+
+
+            }
+
+
+        }
+
+        .aboutsection{
+
+            display: flex;
+            width: 1000px;
+            margin:  15px auto 15px auto;
+            justify-content: center;
+            text-align: center;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+        }
+        .aboutsection img{
+
+           
+            margin: 15px;
+        }
+        .aboutsection p{
+
+            margin: 15px;
+            
+        }
+
+        @media(max-width:490px){
+
+            
+
+            .reviewBox{
+
+                width: 300px;
+            }
+            #reviewHeading{
+
+                font-size: 20px;
+                text-align: center; 
+            }
+
+            .socialLogos{
+
+                width: 20px;
+            }
+            .socialLinks{
+
+                margin-left: 10px;
+            }
+
+            .leftfooter h2{
+
+                font-size: 20px;
+                margin-left: 20px;
+
+            }
+            .leftfooter p{
+
+                font-size: 10px;
+                width: 150px;
+                margin-left: 20px;
+            }
+
+            .rightfooter h2{
+
+                font-size: 20px;
+                margin-left: 20px;
+                margin-top: 25px;
+
+            }
+
+            .rightfooter p{
+
+                font-size: 15px;
+                width: 150px;
+                margin-left: 20px;
+                
+
+            }
+
+            .clinic{
+                display: block;
+            }
+
+            .googlemap{
+
+                width: 350px;
+                height: 300px;
+            }
+            .clinic img{
+
+                width: 370px;
+            }
+
+            .createrCompany h3{
+
+                font-size: 10px;
+            }
+
+            .aboutsection{
+
+                display: block;
+                padding: 10px;
+                width: 400px;
+                
+            }
+            
+            .aboutsection p{
+
+                font-size: 12px;
+                margin: 12px;
+                width: 360px;
+            }
+            .abouth2{
+
+                
+                text-align: center;
+                margin-right: 20px;
+                font-size: 20px;
+                
+
+            }
+        
+
+            .body{
+
+                overflow-x: hidden;
+            }
+
+
+            .box{
+
+                    height: 200px;
+                    width: 180px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+            .box h2{
+
+            font-size: 10px;
+            }
+
+            .box p{
+
+            font-size: 9px;
+            }
+
+            #treatment-txt{
+
+                margin-top: 250px;
+                font-size: 40px;
+            }
+
+            
+
+
+        }
+
+        /* REVIEW SECTION CSS */
+
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .reviewBox{
+
+        margin: 30px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 400px;
+        border-radius: 8px;
+        content: "\f10d";
+       
+    }
+    .customerReview{
+
+        
+        padding: 20px;
+        height: fit-content;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+        box-shadow: 0px  3px 3px grey;
+        border-radius: 8px;
+        
+    }
+
+    .customerInfoBlock{
+
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .customerInfoBlock h4{
+
+        
+        text-align: center;
+        padding: 20px;
+         margin-top: 20px;
+         font-size: 16px;
+         color: grey;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .customerInfoBlock img{
+
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+        border-radius: 50%;
+        
+
+       
+    }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+                                             <!-- HEADER AND NAV BAR HERE -->
+    <header>
+        <nav>
+            <div class="left">
+
+                <img src="tooth-icon.png" alt="">
+                <h2>Dr. Ashish Hedgire</h2>
+                <!-- Endodontist -->
+
+            </div>
+
+            <div class="  right">
+
+                <ul id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="treatments.html" target="_blank">Treatments</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="https://wa.me/message/TTWM6PDHT4QFI1" target="_blank"><Button>Book Appointment</Button></a></li>
+                    
+                    
+
+                </ul>
+
+                <div class="mobile-navbar">
+
+                    <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
+                     <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
+        
+        
+                </div>
+
+            </div>
+
+            
+        </nav>
+
+      
+        
+                                              <!-- SECTION 1 STARTS HERE -->
+        
+    </header>
+
+    
+    <div class="section1">
+
+        <div class="left">
+
+            <h1>Great <span class="txt-color" style="">Smile</span> begins with great </h1>
+            <span id="element"></span>
+           
+
+        </div>
+
+        <div class="right">
+            <img style="" src="dentist-5.png" alt="">
+        </div>
+        
+
+
+    </div>
+
+    <!-- ---------------------------TREATMENTS SECTION-------------------------------- -->
+
+    <h3 id="treatment-txt" style="text-align: center;">Treatments</h3>
+    <div class="section2">
+
+       
+
+
+
+    <div style="text-align: center;" class="container">
+       
+
+        <div id="root-canal-id" class="box">
+            
+            <div class="box-img">
+                <img  style="width: 70px;" src="images/rootcanal-2.png" alt="">
+            </div>
+
+            
+            <h2>Root Canal Treatment</h2>
+            <p>Restoring Your Dental Health with Precision</p>
+
+        </div>
+        <div id="teeth-restoration-id" style="font-size: 16px;" class="box">
+
+            <div class="box-img">
+                <img id="imgexcep" src="images/teeth-restoration.jpg" alt="">
+            </div>
+
+           
+            <h2>Tooth Color Restoration</h2>
+            <p>Revitalize Your Smile with Expert Stain Removal</p>
+
+        </div>
+        <div id="smile-design-id" class="box">
+
+            <div class="box-img">
+                <img src="images/smile-design.png" alt="">
+                
+            </div>
+
+           
+            <h2>Smile Designing</h2>
+            <p>Crafting Your Perfect Smile for Lasting Confidence</p>
+
+        </div>
+        <div id="teeth-rehibilation-id" class="box">
+
+            <div class="box-img">
+                <img src="images/rehibilation.jpg" alt="">
+            </div>
+            
+            <h2>Rehibilation of tooth</h2>
+            <p>Restoring Functionality and Aesthetics for Optimal Oral Health</p>
+
+        </div>
+        <div class="box">
+
+            
+
+
+            <div class="box-img">
+                <img src="bleaching.jpg" alt="">
+            </div>
+            
+            <h2>Bleaching</h2>
+            <p> Illuminate Your Smile with Professional Teeth Whitening</p>
+
+        </div>
+        <div class="box">
+
+            <div class="box-img">
+                <img src="images/traumatic.jpg" alt="">
+            </div>
+            
+            <h2>Traumatic Injuries</h2>
+            <p>Lorem ipsum dolor sit, epturi in!</p>
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    
+                                    <!-- ABOUT SECTION STARTS HERE
+     -->
+
+    <div class="section3">
+
+        <h2 class="abouth2" style="">About your Endotologist</h2>
+
+        <div class="aboutsection">
+
+            
+
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi repellat cupiditate odio! Vero,   ipsum dolor sit amet consectetur adipisicing elit. Ipsum nisi repellat cupiditate odio! Vero, itaque facere. Ducimus harum cumque quam consequun itaque facere. Ducimus harum cumque quam consequuntur incidunt. Alias labore, ratione laborum consequatur consectetur voluptas expedita.</p>
+            <img style="border-radius: 50%;" src="doctor-image-profile.png" alt="Dr. Ashish Hedgire">
+            
+
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <a href="https://wa.me/message/TTWM6PDHT4QFI1"><Button class="bookAppointmentBtn"> Book Appointment</Button></a>
+    </div>
+
+    
+                                        <!-- REVIEW SECTION STARTS HERE -->
+
+                                        <div>
+                         <h2 id="reviewHeading" style="">What our Patient's say ?</h2>
+                                        </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="reviewBox">
+                
+                <div class="customerReview">
+                   
+                    <p> <i class="fa-solid fa-quote-left"></i> &nbsp;Dr. Ashish is an exceptional dentist who truly cares about his patients' comfort and oral health. His gentle approach and thorough explanations always put me at ease during every visit.&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                </div>
+                <div class="customerInfoBlock">
+                    <img src="customer1.png" alt="customer-img">
+                    <h4>Abhishek kange</h4>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="swiper-slide">
+            <div class="reviewBox">
+                <div class="customerReview">
+                    <p><i class="fa-solid fa-quote-left"></i> &nbsp;Dr. Ashish commitment to excellence is evident in every aspect of his practice. From routine cleanings to complex treatments, his precision and genuine concern for patients' well-being shine through&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                </div>
+                <div class="customerInfoBlock">
+                    <img src="https://media.licdn.com/dms/image/C5603AQFD0vvLDZGiFg/profile-displayphoto-shrink_400_400/0/1517252679825?e=1698278400&v=beta&t=TDsN2WWnVwmN8YUUrW7akQ72YYIIoXsOeXrLSDZMLqI" alt="customer-img">
+                    <h4>Shraddha Hedgire</h4>
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-slide">
+            <div class="reviewBox">
+                <div class="customerReview">
+                    <p><i class="fa-solid fa-quote-left"></i> &nbsp;Dr. Ashish's expertise and modern techniques transformed my smile. The results exceeded my expectations, and his friendly manner made the entire process smooth and stress-free&nbsp;<i class="fa-solid fa-quote-right"></i></p>
+                </div>
+                <div class="customerInfoBlock">
+                    <img src="https://media.licdn.com/dms/image/C5603AQFQLt9xWt3hrw/profile-displayphoto-shrink_400_400/0/1516861423427?e=1698278400&v=beta&t=qNIZx9hkJTbCzzgHLPvfOaffWAzb1KJOaUdvC5j5wek" alt="customer-img">
+                    <h4>Saurabh Ude</h4>
+                </div>
+            </div>
+            
+        </div>
+      
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  </div>
+
+                            <!-- CUSTOMER REVIEW BLOCK DESIGN -->
+
+        <!-- <div class="reviewBox">
+            <div class="customerReview">
+                <p>This is a demo customer review</p>
+            </div>
+            <div class="customerInfoBlock">
+                <img src="customer1.png" alt="customer-img">
+                <h4>Abhishek kange</h4>
+            </div>
+        </div>
+         -->
+
+        
+
+
+    <div class="clinicSection">
+        <div><h2>Visit Clinic</h2></div>
+        <div class="clinic">
+            <img src="clinic-image.jpg" alt="">
+            <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.62684818973!2d73.93052907381859!3d18.45524417116922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb31f542ca53%3A0x7f949306ac60bb6f!2sSilver%20Stone%2C%20Handewadi!5e0!3m2!1sen!2sin!4v1692510773930!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="leftfooter">
+            <h2>
+                <i style="color: white;" class="fa-solid fa-location-dot"></i> &nbsp;ADDRESS
+            </h2>
+            <p>
+                Dr. Hedgire's Multi Speciality Dental Clinic & Root Canal Treatment Center.
+                <br><br>Silver Stone Shopping Mall, Handewadi Chowk, Hadapsar Pune 411028
+            </p>
+        </div>
+
+        <div class="rightfooter">
+
+           <h2><strong>contact</strong></h2>
+           <div class="phoneNum">
+            <img style="width: 20px;height: 20px; margin: 20px;"  src="call-logo.png" alt="phonenumber-logo">
+            <p>+91 8208214483</p>
+           </div>
+           
+           <div class="socialLinks">
+            <a href="https://www.instagram.com/drhedgiresdentalclinic/"><img class="socialLogos" src="instagram-logo.png" alt="instagram-logo"></a>
+            <a href="#"><img class="socialLogos" src="facebook-logo.png" alt="facebook-logo"></a>
+            <a href="#"><img class="socialLogos" src="twitter-logo.png" alt="twitter-logo"></a>
+           </div>
+
+        </div>
+
+
+
+
+    </footer>
+
+    
+   
+
+    <div class="createrCompany">
+        <h3>
+            Website by AndroJet Solutions |  <span>    </span>         Contact for web services : 9309815795 
+        </h3>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+        
+          strings: ['Dentist', 'Endotologist','Dentist','Endotologist'],
+          typeSpeed: 50,
+        });
+
+        // NAVIGATION OF TREATMENT BLOCK
+
+        
+        // Get a reference to the clickable div element
+        const rootCanal = document.getElementById('root-canal-id');
+        const smileTreatment = document.getElementById('smile-design-id');
+        const teethRehibilation = document.getElementById('teeth-rehibilation-id');
+        const colorRestoration = document.getElementById('teeth-restoration-id');
+        
+
+        // Add a click event listener to the div
+        rootCanal.addEventListener('click', function() {
+         // Change the window location to the target page URL
+        window.location.href = 'rootcanal.html'; // Replace 'target-page.html' with the actual target page URL
+        });
+
+        smileTreatment.addEventListener('click', function() {
+         // Change the window location to the target page URL
+        window.location.href = 'smile-designing.html'; // Replace 'target-page.html' with the actual target page URL
+        });
+
+        teethRehibilation.addEventListener('click', function() {
+         // Change the window location to the target page URL
+        window.location.href = 'rehibilation-of-tooth.html'; // Replace 'target-page.html' with the actual target page URL
+        });
+
+        colorRestoration.addEventListener('click', function() {
+         // Change the window location to the target page URL
+        window.location.href = 'tooth-color-restoration.html'; // Replace 'target-page.html' with the actual target page URL
+        });
+      </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+    
+</body>
+
+</html>

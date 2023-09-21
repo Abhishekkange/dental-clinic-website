@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dr. Ashish Hedgire</title>
+
+    <style>
+
+        body{
+
+           
+
+            margin: 0px;
+            padding: 0px;
+            font-family: 'poppins','sans-serif';
+            overflow-x: hidden;
+            /* background-imxvbgngfage: linear-gradient(to right, rgb(255, 255, 255) , rgb(207, 207, 207)); */
+        }
+
+        nav{
+
+            display: flex;
+            justify-content: space-between;
+            /* background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(207, 207, 207)); */
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+            background-color: #131039;
+            
+            
+        }
+
+
+
+        nav .left{
+
+            display: flex;
+            
+        }
+        nav .right ul{
+
+            display: flex;
+           
+        }
+        nav .right ul li a:hover{
+
+            font-size: 17px
+        }
+        nav .right button{
+
+            background-color: #4BB295;
+            color: white;
+            padding: 10px 15px 10px 15px;
+            border: 0px;
+            border-radius: 10px;
+        }
+
+        nav .left img{
+
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            margin: 15px;
+            background-color: white;
+        }
+
+        nav .left h2{
+
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        nav .right ul li{
+
+            list-style: none;
+            display: flex;
+            margin:0px 20px 0px 20px;
+            
+        }
+
+         nav .right ul li a{
+
+            text-decoration: none;
+           color: white;
+            
+        }
+        .section1{
+
+            display: flex;
+        }
+
+        .leftCol h1{
+
+            width: 200px;
+            margin: 0px auto 0px auto;
+        }
+
+        .leftCol{
+
+            background-color: red;
+            width: 50%;
+            
+
+        }
+        .rightCol{
+
+           
+            width: 100%;
+            margin: 0px auto 0px auto;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .rightCol img{
+
+            width: 500px;
+            
+        }
+       
+
+        .section1 .leftCol h1{
+
+            width: 200px;
+            font-size: 60px;
+            margin: 0px auto 0px auto;
+        }
+
+        
+        
+        .mobile-navbar-icon{
+
+            width: 2rem;
+            height: 2rem;
+            color: white;
+            margin: auto 1rem auto 1rem;
+            
+            display: none;
+        }
+
+        .mobile-navbar-icon[name="close-outline"]{
+
+            display: none;
+        }
+
+        nav .right{
+
+            margin-right: 0px;
+            display: flex;
+        }
+
+        .mobile-navbar{
+
+            display: flex;
+            justify-content: center;
+        }
+
+        
+                                                /* RESPONSIVE CODE */
+
+            @media(max-width :892px)
+            {
+                .mobile-navbar-icon{
+                    display: block;
+                }
+                
+
+                #nav-list{
+
+                    /* display: none; */
+                    width: 100%;
+                    height: 60vh;
+                    background-color: rgb(235, 55, 55);
+                    top: 0;
+                    left: 0;
+                    position:absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                
+
+                    /* TO GET THE TRANSLATION */
+                    transform: translateX(100%);
+                    transition: all 0.5s linear;
+
+                    opacity: 0;
+                    visibility: hidden;
+                    pointer-events: none;
+                }
+
+                nav .right ul li{
+
+                    margin: 3.5px;
+                    align-items: center;
+                }
+
+                .active #nav-list{
+
+                    transform: translateX(0);
+                    opacity: 1;
+                     visibility: visible;
+
+
+
+                    }
+            }
+            
+            @media(max-width :428px)
+            {
+                .mobile-navbar-icon{
+                    display: block;
+                }
+
+                #nav-list{
+
+                    /* display: none; */
+                   
+                }
+
+                nav .left h2{
+
+                    font-size: 15px;
+                    margin-top: 1rem;
+                }
+                nav .left img{
+
+                   
+                }
+
+                
+            }
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+            <div class="left">
+
+                <img src="tooth-icon.png" alt="">
+                <h2>Dr. Ashish Hedgire</h2>
+
+            </div>
+
+            <div class="  right">
+
+                <ul id="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="treatments.html" target="_blank">Treatments</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank"><Button>Book Appointment</Button></a></li>
+                    
+                    
+
+                </ul>
+
+                <div class="mobile-navbar">
+
+                    <ion-icon class="mobile-navbar-icon" name="menu-outline"></ion-icon>
+                     <ion-icon class="mobile-navbar-icon" name="close-outline"></ion-icon>
+        
+        
+                </div>
+
+            </div>
+
+            
+        </nav>
+
+      
+        
+                                              <!-- SECTION 1 STARTS HERE -->
+        
+    </header>
+</body>
+</html>
